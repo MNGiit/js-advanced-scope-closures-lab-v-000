@@ -6,7 +6,7 @@ function produceDrivingRange(range) {
     if (range >= 7) {
       stringReturn = "2 blocks out of range";
     } else {
-      stringReturn = "within range by 7";
+      stringReturn = "within range by 4";
     }
     
     return stringReturn;
