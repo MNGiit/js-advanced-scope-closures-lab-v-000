@@ -6,8 +6,8 @@ function produceDrivingRange(range) {
     let numTwo = parseInt(stringTwo);
     let blocks = numTwo - numOne;
     
-    if (range > blocks) {
-      stringReturn = `${range - blocks} blocks out of range`;
+    if (range < blocks) {
+      stringReturn = `${blocks - range} blocks out of range`;
     } else {
       stringReturn = `within range by ${range - blocks}`;
     }
