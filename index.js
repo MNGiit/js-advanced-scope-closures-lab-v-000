@@ -24,7 +24,18 @@ function produceTipCalculator(fare) {
   };
 }
 
-
+function createDriver() {
+  let driverId = 0;
+  
+  // return the class
+  return class {
+    constructor(name) {
+      this.name = name;
+      this.id = ++driverId;
+    }
+  };
+  
+}
 
 function createItem() {
   let ItemId = 0;
