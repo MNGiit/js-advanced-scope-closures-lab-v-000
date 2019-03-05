@@ -2,8 +2,8 @@ function produceDrivingRange() {
   let number = 0;
   
   // returns a function that will take two strings as arguments and returns a message
-  return function {
-    r
+  return function(stringOne, stringTwo) {
+    return 
   }
 }
 
@@ -20,6 +20,11 @@ function createItem() {
     retailPrice(marketMultiplier) {
       return marketMultiplier * this.manufacturePrice;
     }
+  };
+}
+ function retailPriceMaker(manufacturePrice) {
+  return function(marketMultiplier) {
+    return marketMultiplier * manufacturePrice;
   };
 }
  
