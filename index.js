@@ -7,7 +7,7 @@ function produceDrivingRange(range) {
     let blocks = numTwo - numOne;
     
     if (range > blocks) {
-      stringReturn = `${blocks - range} blocks out of range`;
+      stringReturn = `${range - blocks} blocks out of range`;
     } else {
       stringReturn = `within range by ${range - blocks}`;
     }
