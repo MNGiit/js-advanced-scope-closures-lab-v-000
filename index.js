@@ -36,25 +36,3 @@ function createDriver() {
   };
   
 }
-
-function createItem() {
-  let ItemId = 0;
-  // return the class
-  return class {
-    constructor(name, manufacturePrice) {
-      this.name = name;
-      this.manufacturePrice = manufacturePrice;
-      this.id = ++ItemId;
-    }
- 
-    retailPrice(marketMultiplier) {
-      return marketMultiplier * this.manufacturePrice;
-    }
-  };
-}
- function retailPriceMaker(manufacturePrice) {
-  return function(marketMultiplier) {
-    return marketMultiplier * manufacturePrice;
-  };
-}
- 
