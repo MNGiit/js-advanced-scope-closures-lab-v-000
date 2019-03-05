@@ -17,6 +17,15 @@ function produceDrivingRange(range) {
   
 }
 
+function produceTipCalculator(fare) {
+  // returns a function
+  return function(tip) {
+    return fare * tip;
+  };
+}
+
+
+
 function createItem() {
   let ItemId = 0;
   // return the class
