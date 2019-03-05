@@ -2,12 +2,14 @@ function produceDrivingRange(range) {
   // returns a function that will take two strings as arguments and returns a message
   return function(stringOne, stringTwo) {
     let stringReturn = "";
-    let numOne = 
+    let numOne = parseInt(stringOne);
+    let numTwo = parseInt(stringTwo);
+    let blocks = numTwo - numOne;
     
-    if (range >= 7) {
-      stringReturn = "2 blocks out of range";
+    if (range > blocks) {
+      stringReturn = `${blocks - range} blocks out of range`;
     } else {
-      stringReturn = "within range by 4";
+      stringReturn = `within range by ${range - blocks}`;
     }
     
     return stringReturn;
